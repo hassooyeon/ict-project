@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 기반 반응형 웹페이지</title>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- 네비게이션 -->
+    <nav>
+        <ul>
+            <li><a href="index.html">춘천막국수닭갈비축제</a></li>
+            <li><a href="a1.html">축제일정</a></li>
+            <li><a href="a2.html">갤러리</a></li>
+            <li><a href="a3.html">오시는 길</a></li>
+        </ul>
+        <a href="#" id="trigger">MENU</a>
+    </nav>
+
+
+
+    <!-- 헤더 -->
+    <section>
+        <div class="wrapper">
+            <div class="banner">
+                <div class="bxslider">
+                    <div><img src="img/14-1.jpg"></div>
+                    <div><img src="img/15-1.jpg"></div>
+                    <div><img src="img/16-1.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 왜 코딩 교육 : 좌우 2개 항목 -->
+    <section>
+        <div class="wrapper"> 
+             <header class="section-title">
+                <h3>춘천막국수닭갈비축제</h3>
+            </header> 
+             <div class="intro">
+                <div class="text"> 
+                     <p>춘천의 향토음식으로서 춘천 닭갈비는 1960년대 안주용으로 쓰이던 돼지고기 대신 개발한 메뉴인 닭불고기에서 기원을 찾을 수 있다. 1960년대 후반에 오면서 철판위에 양념한 닭고기와 채소를 썰어 볶은 형태인 닭갈비로 발전하게 되었다. 또한 막국수는 그 이름의 유래에 대해서는 정확히 알 수 없으나 임진왜란 이후 인조시대 즐겨먹던 음식으로 특히, 춘천지방에서 긴 겨울 밤참으로 애용되어온 강원특별자치도산 식품이다.
+                        춘천막국수닭갈비축제는 춘천의 대표적인 향토음식인 막국수, 닭갈비 소개하는 지역축제이다.
+                    </p> 
+                 </div> 
+                 <div class="img">
+                    <img src="img/coding.png" width="250">
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- 한마디 : flex 사용 안 함 -->
+    <section>
+        <div class="wrapper">
+            <!-- <div class="about">
+                <div class="msg">
+                    <p><img src="img/quot-1.png"></p>
+                    <video src="img/aa.mp4"autoplay muted loop></video>
+                    
+                    <p><img src="img/quot-2.png"></p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- 교육 프로그램 : 한 줄에 여러 항목 -->
+    <section>
+        <div class="wrapper">
+            <!-- <header class="section-title">
+                <h3>축제 프로그램</h3>
+            </header>
+            <div class="program-list">
+                <div class="program">
+                    <p><img src="img/business-23-1.jpg" alt=""></p>
+                </div>
+                <div class="program">
+                    <p><img src="img/business-24-1.jpg" alt=""></p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+
+    <!-- 푸터 -->
+    <section class="footer">
+        <div class="wrapper">
+            <div class="footer-info">
+                <div class="contact">
+                    <p> 서울특별시 XX구 XXX로 XX길 XXXXXXX / 대표 : OOO </p>
+                    <p> 사업자등록번호 : ㅁㅁㅁ-ㅁㅁ-ㅁㅁㅁㅁㅁ
+                    <p> 전화 : XXXX - XXXX / 팩스 : XX - XXXX - XXXX </p>
+                    <p> 이메일 : aaa@aaa.aaa</p>
+                </div>
+                <div class="sns">
+                    <a href="#"><img src="img/fb.png"></a>
+                    <a href="#"><img src="img/tw.png"></a>
+                    <a href="#"><img src="img/ytube.png"></a>
+                    <a href="#"><img src="img/gp.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

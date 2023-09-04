@@ -1,0 +1,244 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+/* 네비게이션 */
+a:link, a:hover,a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px #283744;
+}
+
+nav{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    background: red;
+    font-size: 1.0em;
+    font-weight: bold;
+    position: relative;
+}
+
+
+
+nav ul{
+    display: none;
+    height: auto;
+}
+nav ul li{
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #576979;
+}
+nav ul li a{      
+    line-height: 50px;
+}
+nav a#trigger{
+    display: block;
+    background-color: red;
+    width: 100%;
+    padding-left: 15px;
+    line-height: 40px;
+    position: relative;
+}
+@media screen and (min-width:764px){
+    nav{
+        height: 80px;
+        border-bottom: 2px solid black;
+    }
+    nav ul{
+        list-style: none;
+        display: block;
+        width: 750px;
+        height: 80px;
+        padding: 0px;
+        margin: 0px auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li{
+        flex: 1;
+        flex-basis: 22%;
+        border-bottom: 0;
+        border-right: 1px solid black;
+        margin-right: -6px;
+    }
+    nav ul li:last-child{
+        border-right: 0;
+    }
+    nav ul li a{
+        font-size: 1em;
+        line-height: 80px;
+    }
+    nav a#trigger{
+        display: none;
+    }
+}
+
+/* section */
+section{
+    width: 100vw;
+    position: relative;
+}
+
+section:nth-child(odd){
+    background-color: #f3f3f4; 
+}
+
+
+section-title{
+    margin: 30px auto 50px auto;
+    /* border: 1px solid red; */
+}
+.section-title h3{
+    font-size: 1.8em;
+    text-align: center;
+}
+.wrapper{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background: transparent;/*투명*/
+}
+
+
+/* 화면 너비를 아무리 크게 만들더라도 내용은 최대 너비 1300px까지 표시 */
+@media screen and (min-width:764px){
+    .wrapper{
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+}
+
+/* 헤더 */
+.banner{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+/* 코딩 영역 */
+.about{
+    line-height: 1.8;
+    padding: 20px 50px;
+}
+.msg p{
+    color: #ff6600;
+    font-size: 1.4em;
+    font-family: 'Nanum Myeongjo', serif;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.msg span{
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+/* 왜 코딩 교육? 영역 */
+.intro{
+    padding: 20px 50px;
+}
+.text{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.text p{
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+.img{
+    text-align: center;
+    display: none;
+}
+
+@media screen and (min-width:764px){
+    .intro{
+        padding: 20px 50px;
+        display: flex;/* .intro의 자식 요소를 플렉스 박스로 배치 */
+        align-items: center; /*플렉스 컨테이너의 교차 축(수직) 방향 정렬 방법 지정*/
+    }
+    .text{
+        flex:2; /*기본크리(flex:1)의 2배만큼 차지*/
+    }
+    .img{
+        display: block;
+        flex: 1; /*기본 크리(flex:1)만큼 차지*/
+    }
+    .img>img{
+        max-width: 250px;
+    }
+}
+    
+
+
+/* 교육 프로그램 */
+.program-list{
+    padding: 20px 50px;
+}
+.program-list h4{
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+.program{
+    padding: 30px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+}
+
+@media screen and (min-width:764px){
+    .program-list{
+        display: flex;/* 자식 요소에 플렉스 적용*/
+
+        /* 첫번째 블록의 왼쪽과 마지막 블록의 오른쪽에는 여백을 넣지 않고 일정 간격으로 배치*/
+        /* justify-content: space-between; -수정*/
+        justify-content: center;
+    }
+    .program{
+         /* 각 블록의 기본 너비 */
+        flex-basis: 22%;
+    }
+}
+/* 푸터 */
+.footer{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #34455e;
+}
+.footer-info{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.contact{
+    color: #fff;
+}
+.sns{
+    margin-top: 50px;
+}
+.sns a{
+    margin-right: 30px;
+}
+.sns a:last-child{
+    margin-right: 0px;
+}
+
+@media screen and (min-width:764px){
+    .footer-info{
+        max-width: 1300px;
+        display: flex;
+    }
+    .contact{
+        flex: 2;
+    }
+    .sns{
+        flex: 1;
+    }
+}
+
+
